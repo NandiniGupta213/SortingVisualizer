@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="/assets/css/visualizer.css" />
+</head>
+<body>
+  <header>
+    <h1>Sorting Visualizer:</h1>
+    <div class="controls">
+      <label>Size <input id="sizeSlider" type="range" min="5" max="50" value="5"></label>
+      <label>Speed <input id="speedSlider" type="range" min="1" max="10" value="1"></label>
+      <button class="new-array" id="newArrayBtn">New Array</button>
+      <nav>
+         <a href="#" id="bubble">Bubble</a>
+         <a href="#" id="selection">Selection</a>
+         <a href="#" id="insertion">Insertion</a>
+         <a href="#" id="merge">Merge</a>
+         <a href="#" id="quick">Quick</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="complexity time"> 
+    <h3><a href="#">TIME COMPLEXITY</a></h3>
+    <p>Worst case: <span id="time-worst"></span></p>
+    <p>Average case: <span id="time-avg"></span></p>
+    <p>Best case: <span id="time-best"></span></p>
+    </div>  
+
+    <div class="visualizer">
+      <div class="bars">
+        
+      </div>
+    </div>
+
+    <div class="complexity space">
+    <h3><a href="#">SPACE COMPLEXITY</a></h3>
+    <p>Worst case: <span id="space-worst"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <button class="start-btn" id="startBtn">Start</button>
+  </footer>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
+
+
